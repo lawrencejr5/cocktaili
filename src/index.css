@@ -1,0 +1,243 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  background-color: rgb(148, 16, 16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  box-sizing: border-box;
+  position: sticky;
+}
+nav .logo {
+  font-weight: 600;
+  font-size: 25px;
+  color: #f4e7e7;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  width: 80px;
+}
+nav ul li .link {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul li .link:hover {
+  color: grey;
+}
+.about {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.error {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.error button {
+  background-color: rgb(148, 16, 16);
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+}
+.search-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f4e7e7;
+  color: black;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+}
+.search-container label {
+  display: block;
+}
+.search-container .form-control {
+  display: flex;
+  align-items: center;
+}
+.search-container input {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.2rem;
+  border: none;
+  padding: 0.3rem;
+  outline-color: #941010;
+  border-radius: 3px;
+}
+.search-container button {
+  background-color: #941010;
+  padding: 0.3rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+}
+.cocktail-container {
+  margin: 1rem;
+}
+.cocktail-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.cocktail-card {
+  width: 200px;
+  margin: 0.5rem;
+  height: 290px;
+  padding: 0.5rem;
+  background-color: #f4e7e7;
+  border-radius: 5px;
+  margin-top: 1rem;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cocktail-card img {
+  width: 100%;
+  height: auto;
+}
+.cocktail-card h4 {
+  margin: 0.3rem 0;
+  color: #941010;
+}
+.cocktail-card b {
+  display: block;
+}
+.cocktail-card span {
+  display: block;
+}
+.cocktail-card button {
+  display: block;
+  float: right;
+  background-color: #941010;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+}
+.cockById {
+  margin: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cockById .img {
+  width: 500px;
+}
+.cockById .details {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+.cockById p {
+  display: flex;
+}
+.cockById span {
+  background-color: #b5d3b5;
+  color: #054105;
+  font-size: 14px;
+  padding: 0.1rem 0.2rem;
+  margin-right: 0.8rem;
+  border-radius: 3px;
+  height: 18px;
+}
+.cockById .link {
+  background-color: #000;
+  color: #941010;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0rem 0.5rem;
+  font-size: 20px;
+  color: #f4e7e7;
+  border-radius: 3px;
+  display: table;
+}
+.cockById img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+.cockById .name {
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.cockById .instructions {
+  width: 100%;
+  max-width: 600px;
+}
+.cockById .instructions span {
+  width: 90px;
+}
+.loading-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.loading {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 3px solid #941010;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.loading2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-top: 3px solid #941010;
+  animation-name: loading2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .cockById {
+    justify-content: center;
+  }
+}
